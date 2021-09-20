@@ -29,46 +29,39 @@
                 'footer-menu', ) ); 
             ?>
           </div>
+              <div class="footer__info">
+                <div class="footer__details">
+                  <p class="text-bold"><?php the_field( 'location_name', 'option' ) ?></p>
+                  <p><?php the_field( 'address_line_1', 'option' ) ?></p>
+                  <p><?php the_field( 'address_line_2', 'option' ) ?></p>
+                </div>
+                <div class="footer__details">
+                  <p class="text-bold"><?php the_field( 'contact_details_title', 'option' ) ?></p>
+                  <p>P : <?php the_field( 'phone_number', 'option' ) ?></p>
+                  <p>M : <?php the_field( 'email_address', 'option' ) ?></p>
+                </div>
+                <div class="social-icons">
+                <?php
+                if( have_rows( 'social_icons', 'option' ) ){
+                  while( have_rows( 'social_icons', 'option' ) ) {
+                    the_row();
+                    ?>
 
-          <div class="footer__info">
-            <div class="footer__details">
-              <p class="text-bold">Designo Central Office</p>
-              <p>3886 Wellington Street</p>
-              <p>Toronto, Ontario M9C 3J5</p>
-            </div>
-            <div class="footer__details">
-              <p class="text-bold">Contact Us (Central Office)</p>
-              <p>P : +1 253-863-8967</p>
-              <p>M : contact@designo.co</p>
-            </div>
-            <div class="social-icons">
-              <a href="https://facebook.com"
-                ><img
-                  src="<?php echo get_theme_file_uri( '/assets/shared/desktop/icon-facebook.svg' ); ?>"
-                  alt="facebook"
-              /></a>
-              <a href="https://youtube.com"
-                ><img
-                  src="<?php echo get_theme_file_uri( '/assets/shared/desktop/icon-youtube.svg' ); ?>"
-                  alt="youtune"
-              /></a>
-              <a href="https://twitter.com"
-                ><img
-                  src="<?php echo get_theme_file_uri( '/assets/shared/desktop/icon-twitter.svg' ); ?>"
-                  alt="twitter"
-              /></a>
-              <a href="https://pinterest.com"
-                ><img
-                  src="<?php echo get_theme_file_uri( '/assets/shared/desktop/icon-pinterest.svg' ); ?>"
-                  alt="pinterest"
-              /></a>
-              <a href="https://instagram.com"
-                ><img
-                  src="<?php echo get_theme_file_uri( '/assets/shared/desktop/icon-instagram.svg' ); ?>"
-                  alt="instagram"
-              /></a>
-            </div>
-          </div>
+                    <a href="<?php the_sub_field( 'url' ) ?>">
+                      <img
+                          src="<?php echo get_sub_field( 'icon' )['url']; ?>"
+                          alt="social media link"
+                      />
+                    </a>
+
+                    <?php
+                  }
+                }
+                ?>
+                </div>
+              </div>
+
+              
         </div>
       </footer>
 
