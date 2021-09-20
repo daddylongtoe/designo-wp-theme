@@ -172,6 +172,7 @@ function designo_scripts() {
 	wp_style_add_data( 'designo-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'designo-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'designo-mobile-menu', get_template_directory_uri() . '/js/mobile-menu.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
