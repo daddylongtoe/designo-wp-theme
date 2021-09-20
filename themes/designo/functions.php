@@ -18,8 +18,8 @@ if( function_exists('acf_add_options_page')) {
 	));
 	
 	acf_add_options_sub_page(array(
-		'page_title' 	=> 'Theme Contact Settings',
-		'menu_title'	=> 'Global Contact',
+		'page_title' 	=> 'Theme Component Settings',
+		'menu_title'	=> 'Global Components',
 		'parent_slug'	=> 'theme-general-settings',
 	));
 	
