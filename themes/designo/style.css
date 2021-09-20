@@ -1293,69 +1293,6 @@ a:focus:hover {
   }
 }
 
-#graphic-design {
-  min-height: 250px;
-  display: flex;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  color: #fff;
-  border-radius: 15px;
-  overflow: hidden;
-  position: relative;
-  transition: all 0.5s ease-out;
-  text-align: center;
-}
-#graphic-design:hover .service-tile-bg {
-  transform: scale(1.2);
-}
-#graphic-design:hover::after {
-  background-color: rgba(231, 129, 107, 0.5);
-}
-#graphic-design::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  transition: all 0.3s ease;
-}
-#graphic-design a {
-  padding-block: 100%;
-  margin-block: -100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  color: inherit;
-  text-decoration: none;
-}
-#graphic-design h2 {
-  padding: 10px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-#graphic-design p {
-  text-transform: uppercase;
-  font-size: 15px;
-  letter-spacing: 5px;
-  line-height: 21.68px;
-  padding: 10px;
-}
-@media (min-width: 769px) {
-  #graphic-design {
-    min-height: 200px;
-  }
-}
-@media (min-width: 1200px) {
-  #graphic-design {
-    min-height: 308px;
-  }
-}
-
 /* HOMEPAGE */
 .main-container {
   max-width: 1440px;

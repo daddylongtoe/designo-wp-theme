@@ -60,32 +60,16 @@ if ( have_posts() ) {
        <?php } ?>
         </div>
       </section>
-    <?php } ?>
+    <?php }
 
-    <section class="services__section">
-      <div class="services container">
-        <div class="service-tile" id="app-design">
-          <a href="<?php echo site_url('/services/app-design/'); ?>" class="service-tile__link">
-            <h2 class="service-tile__heading">App Design</h2>
-            <p>View Projects</p>
-          </a>
-        </div>
-        <div class="service-tile" id="graphic-design">
-          <a href="<?php echo site_url('/services/graphic-design/'); ?>" class="service-tile__link">
-            <h2 class="service-tile__heading">Graphic Design</h2>
-            <p>View Projects</p>
-          </a>
-        </div>
-      </div>
-    </section>
-    <?php
-  }
-}
+    wp_reset_postdata();
 
-wp_reset_postdata();
-?>
+    get_template_part( 'template-parts/section', 'servicepage-services' );
+
+     }
+    }
+     ?>
 
 <?php get_template_part( 'template-parts/section', 'contact' ); ?>
 
 <?php get_footer(); ?>
-
