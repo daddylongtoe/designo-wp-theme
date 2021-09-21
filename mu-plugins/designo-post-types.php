@@ -46,6 +46,29 @@ function designo_post_types() {
 		)
 	);
 
+  // Location Post Type
+	register_post_type(
+		'location',
+		array(
+			'show_in_rest'      => true,
+			'supports'          => array( 'title',  ),
+			'rewrite'           => 'false',
+      'public'            => true,
+      'publicly_queryable' => true,
+      'exclude_from_search' => true,
+      'show_in_nav_menus' => false,
+      'has_archive' => false,
+			'labels'            => array(
+				'name'          => 'Locations',
+				'add_new_item'  => 'Add New Location',
+				'edit_item'     => 'Edit Location',
+				'all_items'     => 'All Locations',
+				'singular_name' => 'Location',
+			),
+			'menu_icon'         => 'dashicons-location-alt',
+		)
+	);
+
 }
 
 add_action( 'init', 'designo_post_types' );

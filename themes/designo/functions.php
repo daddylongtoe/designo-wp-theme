@@ -31,6 +31,15 @@ if ( function_exists( 'acf_add_options_page' ) ) {
 
 }
 
+add_action( 'admin_footer', 'hide_location_permalink' );
+
+function hide_location_permalink() {
+  global $post_type;
+  if ($post_type == 'location') {
+    echo '<script> document.getElementById("edit-slug-box").outerHTML = ""; </script>';
+  }
+};
+
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
 	define( '_S_VERSION', '1.0.0' );
