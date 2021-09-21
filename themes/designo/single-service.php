@@ -12,7 +12,7 @@ if ( have_posts() ) {
         <div class="service-header__content">
           <h1 class="service-header__title text-white"><?php the_title(); ?></h1>
           <p class="service-header__text">
-          <?php the_excerpt(); ?>
+            <?php echo get_the_excerpt(); ?>
           </p>
         </div>
       </div>
@@ -53,7 +53,7 @@ if ( have_posts() ) {
             <div class="project-card__details">
               <h3 class="project-card__title"><?php the_title(); ?></h3>
               <p class="project-card__text">
-                <?php the_excerpt(); ?>
+                <?php echo get_the_excerpt(); ?>
               </p>
             </div>
           </div>

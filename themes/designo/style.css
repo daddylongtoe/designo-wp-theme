@@ -35,9 +35,10 @@ body {
   overflow-y: scroll;
 }
 
-.page-content {
-  min-height: 22rem;
+.site-main {
+  min-height: calc(100vh - 30.76rem);
 }
+
 .page-content > * {
   padding-block: 20px;
 }
@@ -82,8 +83,7 @@ a:not([class]) {
 }
 
 /* Make images easier to work with */
-img,
-picture {
+img {
   max-width: 100%;
   display: block;
 }
@@ -622,7 +622,7 @@ a:focus:hover {
   top: 0;
   left: 0;
   z-index: -1;
-  background-image: url("../../../assets/shared/desktop/bg-pattern-small-circle.svg");
+  background-image: url("./assets/shared/desktop/bg-pattern-small-circle.svg");
   background-repeat: no-repeat;
   background-position: bottom 14rem right 1vw;
   background-size: 72.5vw;
@@ -715,7 +715,7 @@ a:focus:hover {
   top: 0;
   left: 0;
   z-index: 0;
-  background-image: url("../../../assets/shared/desktop/bg-pattern-three-circles.svg");
+  background-image: url("./assets/shared/desktop/bg-pattern-three-circles.svg");
   background-repeat: no-repeat;
   background-position: left top;
   background-size: 40rem;
@@ -887,7 +887,7 @@ a:focus:hover {
     padding-inline: 95px;
   }
   .contact-header::before {
-    background-image: url("../../../assets/contact/desktop/bg-pattern-hero-desktop.svg");
+    background-image: url("./assets/contact/desktop/bg-pattern-hero-desktop.svg");
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: 40rem;
@@ -937,7 +937,7 @@ a:focus:hover {
   top: 0;
   left: 0;
   z-index: 0;
-  background-image: url("../../../assets/shared/desktop/bg-pattern-three-circles.svg");
+  background-image: url("./assets/shared/desktop/bg-pattern-three-circles.svg");
   background-repeat: no-repeat;
   background-position: left top;
   background-size: 38rem;
@@ -1057,7 +1057,7 @@ a:focus:hover {
 }
 .service-header__text {
   margin-inline: auto;
-  max-width: 50ch;
+  max-width: 40ch;
   padding-bottom: 1.5625em;
 }
 @media (min-width: 769px) {

@@ -1,13 +1,13 @@
 <section class="location-icons__section container">
   <div class="location-icons">
     <?php
-    $locations = new WP_Query( 
+    $locations = new WP_Query(
       array (
         'post_type' => 'location',
         'orderby'   => 'ID',
 				'order'     => 'ASC',
       )
-      );
+    );
 
     if ( $locations->have_posts() ) {
       while ( $locations->have_posts() ) {

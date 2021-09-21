@@ -40,6 +40,24 @@ function hide_location_permalink() {
   }
 };
 
+function odd_left_even_right($index) {
+  if ($index % 2 == 0) {
+    return 'locations__item--map-right';
+  } else {
+    return 'locations__item--map-left';
+  }
+}
+
+function custom_redirects() {
+
+  if ( is_single() && get_post_type() == 'location' ) {
+      wp_redirect( home_url( '/locations' ) );
+      die;
+  }
+}
+
+add_action( 'template_redirect', 'custom_redirects' );
+
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
 	define( '_S_VERSION', '1.0.0' );

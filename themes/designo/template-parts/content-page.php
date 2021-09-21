@@ -10,9 +10,12 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
+
+  <header class="service-header__section bg-peach container entry-header">
+    <div class="service-header container text-white">
+        <h1 class="service-header__title text-white" style="padding-bottom: 0"><?php the_title(); ?></h1>
+    </div>
+  </header>
 
 	<?php designo_post_thumbnail(); ?>
 

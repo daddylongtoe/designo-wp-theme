@@ -26,9 +26,11 @@ body {
   overflow-y: scroll;
 }
 
-.page-content {
-  min-height: 22rem;
+.site-main {
+  min-height: calc(100vh - 30.76rem);
+}
 
+.page-content {
   & > * {
     padding-block: 20px;
   }
