@@ -4,7 +4,7 @@
   <div class="locations">
 
     <?php
-    $index = 0;
+    $index = 1;
     $locations = new WP_Query (
       array (
         'post_type' => 'location',
@@ -20,10 +20,22 @@
 
         <div class="locations__item <?php echo odd_left_even_right($index); ?>" id="canada">
           <div class="locations__map">
-            <img
-              src="<?php echo get_field( 'map' )['url']; ?>"
-              alt="map of office location"
-            />
+            <picture>
+              <source
+                srcset="<?php echo get_field( 'map_tablet' )['url']; ?>"
+                type="image/png"
+                media="all and (max-width:1199px)"
+              />
+              <source
+                srcset="<?php echo get_field( 'map_desktop' )['url']; ?>"
+                type="image/png"
+                media="all and (min-width:1200px)"
+              />
+              <img
+                src="<?php echo get_field( 'map_tablet' )['url']; ?>"
+                alt="map of office location"
+              />
+            </picture>
           </div>
           <div class="locations__details">
             <h2 class="locations__title"><?php the_title(); ?></h2>
