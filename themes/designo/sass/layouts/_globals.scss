@@ -25,3 +25,11 @@
 body {
   overflow-y: scroll;
 }
+
+.page-content {
+  min-height: 25rem;
+
+  & > * {
+    padding-block: 20px;
+  }
+}

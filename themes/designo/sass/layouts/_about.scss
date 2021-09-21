@@ -42,14 +42,15 @@
       background-position: bottom 14rem right 1vw;
       background-size: 72.5vw;
     }
+
+    & > p {
+      max-width: 59ch;
+    }
   }
 
   &__title {
     text-transform: capitalize;
     max-width: 18ch;
-  }
-  &__text {
-    max-width: 50ch;
   }
 
   &__image img {
@@ -97,10 +98,10 @@
       align-items: flex-start;
       text-align: left;
       z-index: 1;
-    }
 
-    &__text {
-      max-width: 50ch;
+      & > p {
+        max-width: 50ch;
+      }
     }
 
     &__image img {
@@ -177,6 +178,10 @@
         background-position: right 1rem bottom 2rem;
         background-size: 40rem;
       }
+
+      & > p {
+        max-width: 56ch;
+      }
     }
   }
 
@@ -208,6 +213,10 @@
       align-items: flex-start;
       text-align: left;
       z-index: 1;
+
+      // & > p {
+      //   max-width: 56ch;
+      // }
 
       & > * {
         padding-left: 90px;

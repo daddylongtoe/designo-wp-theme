@@ -35,6 +35,13 @@ body {
   overflow-y: scroll;
 }
 
+.page-content {
+  min-height: 25rem;
+}
+.page-content > * {
+  padding-block: 20px;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -615,12 +622,12 @@ a:focus:hover {
   background-position: bottom 14rem right 1vw;
   background-size: 72.5vw;
 }
+.about-header__content > p {
+  max-width: 59ch;
+}
 .about-header__title {
   text-transform: capitalize;
   max-width: 18ch;
-}
-.about-header__text {
-  max-width: 50ch;
 }
 .about-header__image img {
   width: 100%;
@@ -639,9 +646,6 @@ a:focus:hover {
     background-position: bottom 6rem left 12rem;
     background-size: 34rem;
     transform: skewX(-1);
-  }
-  .about-header__text {
-    max-width: 59ch;
   }
   .about-header__section {
     border-radius: 15px;
@@ -663,7 +667,7 @@ a:focus:hover {
     text-align: left;
     z-index: 1;
   }
-  .about-header__text {
+  .about-header__content > p {
     max-width: 50ch;
   }
   .about-header__image img {
@@ -714,9 +718,6 @@ a:focus:hover {
 .image-text__title {
   color: #e7816b;
 }
-.image-text__text {
-  max-width: 58ch;
-}
 .image-text__image img {
   width: 100%;
 }
@@ -731,6 +732,9 @@ a:focus:hover {
   .image-text__content::before {
     background-position: right 1rem bottom 2rem;
     background-size: 40rem;
+  }
+  .image-text__content > p {
+    max-width: 56ch;
   }
 }
 @media (min-width: 1200px) {
@@ -762,9 +766,6 @@ a:focus:hover {
   }
   .image-text__content::before {
     background-size: 33rem;
-  }
-  .image-text__text {
-    max-width: 56ch;
   }
   .image-text__image img {
     min-width: 476px;
