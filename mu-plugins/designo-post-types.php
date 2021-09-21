@@ -54,10 +54,8 @@ function designo_post_types() {
 			'supports'          => array( 'title',  ),
 			'rewrite'           => 'false',
       'public'            => true,
-      'publicly_queryable' => true,
-      'exclude_from_search' => true,
       'show_in_nav_menus' => false,
-      'has_archive' => false,
+      'has_archive'       => false,
 			'labels'            => array(
 				'name'          => 'Locations',
 				'add_new_item'  => 'Add New Location',

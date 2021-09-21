@@ -39,4 +39,4 @@
 
 <?php get_template_part( 'template-parts/section', 'location-icons' ); ?>
 
-<?php get_footer(); ?>
+<?php get_footer('short'); ?>
