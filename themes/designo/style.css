@@ -64,6 +64,10 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
 
 /* Set core root defaults */
 html:focus-within {
@@ -1174,138 +1178,7 @@ a:focus:hover {
   }
 }
 
-#web-design {
-  min-height: 250px;
-  display: flex;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  color: #fff;
-  border-radius: 15px;
-  overflow: hidden;
-  position: relative;
-  transition: all 0.5s ease-out;
-  text-align: center;
-}
-#web-design:hover .service-tile-bg {
-  transform: scale(1.2);
-}
-#web-design:hover::after {
-  background-color: rgba(231, 129, 107, 0.5);
-}
-#web-design::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  transition: all 0.3s ease;
-}
-#web-design a {
-  padding-block: 100%;
-  margin-block: -100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  color: inherit;
-  text-decoration: none;
-}
-#web-design h2 {
-  padding: 10px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-#web-design p {
-  text-transform: uppercase;
-  font-size: 15px;
-  letter-spacing: 5px;
-  line-height: 21.68px;
-  padding: 10px;
-}
-@media (min-width: 769px) {
-  #web-design {
-    min-height: 200px;
-  }
-}
-@media (min-width: 1200px) {
-  #web-design {
-    min-height: 308px;
-  }
-}
-
-#app-design {
-  min-height: 250px;
-  display: flex;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  color: #fff;
-  border-radius: 15px;
-  overflow: hidden;
-  position: relative;
-  transition: all 0.5s ease-out;
-  text-align: center;
-}
-#app-design:hover .service-tile-bg {
-  transform: scale(1.2);
-}
-#app-design:hover::after {
-  background-color: rgba(231, 129, 107, 0.5);
-}
-#app-design::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  transition: all 0.3s ease;
-}
-#app-design a {
-  padding-block: 100%;
-  margin-block: -100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  color: inherit;
-  text-decoration: none;
-}
-#app-design h2 {
-  padding: 10px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-#app-design p {
-  text-transform: uppercase;
-  font-size: 15px;
-  letter-spacing: 5px;
-  line-height: 21.68px;
-  padding: 10px;
-}
-@media (min-width: 769px) {
-  #app-design {
-    min-height: 200px;
-  }
-}
-@media (min-width: 1200px) {
-  #app-design {
-    min-height: 308px;
-  }
-}
-
 /* HOMEPAGE */
-.main-container {
-  max-width: 1440px;
-  position: relative;
-  margin-inline: auto;
-}
 
 .header {
   margin-bottom: 3.75rem;
@@ -1472,6 +1345,9 @@ a:focus:hover {
   width: 100%;
   color: inherit;
   text-decoration: none;
+}
+.service-tile a:active, .service-tile a:focus {
+  text-decoration: inherit;
 }
 .service-tile h2 {
   padding: 10px;
