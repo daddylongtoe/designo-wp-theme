@@ -9,51 +9,57 @@
 
 if ( function_exists( 'acf_add_options_page' ) ) {
 
-  acf_add_options_page( array (
-		'page_title' 	=> 'Theme General Settings',
-		'menu_title'	=> 'Theme Settings',
-		'menu_slug' 	=> 'theme-general-settings',
-		'capability'	=> 'edit_posts',
-		'redirect'		=> false
-	) );
+	acf_add_options_page(
+		array(
+			'page_title' => 'Theme General Settings',
+			'menu_title' => 'Theme Settings',
+			'menu_slug'  => 'theme-general-settings',
+			'capability' => 'edit_posts',
+			'redirect'   => false,
+		)
+	);
 
-	acf_add_options_sub_page( array (
-		'page_title' 	=> 'Theme Component Settings',
-		'menu_title'	=> 'Global Components',
-		'parent_slug'	=> 'theme-general-settings',
-	) );
+	acf_add_options_sub_page(
+		array(
+			'page_title'  => 'Theme Component Settings',
+			'menu_title'  => 'Global Components',
+			'parent_slug' => 'theme-general-settings',
+		)
+	);
 
-	acf_add_options_sub_page( array (
-		'page_title' 	=> 'Theme Footer Settings',
-		'menu_title'	=> 'Footer',
-		'parent_slug'	=> 'theme-general-settings',
-	) );
+	acf_add_options_sub_page(
+		array(
+			'page_title'  => 'Theme Footer Settings',
+			'menu_title'  => 'Footer',
+			'parent_slug' => 'theme-general-settings',
+		)
+	);
 
 }
 
 add_action( 'admin_footer', 'hide_location_permalink' );
 
 function hide_location_permalink() {
-  global $post_type;
-  if ($post_type == 'location') {
-    echo '<script> document.getElementById("edit-slug-box").outerHTML = ""; </script>';
-  }
+	global $post_type;
+	if ( $post_type == 'location' ) {
+		echo '<script> document.getElementById("edit-slug-box").outerHTML = ""; </script>';
+	}
 };
 
-function odd_left_even_right($index) {
-  if ($index % 2 == 0) {
-    return 'locations__item--map-right';
-  } else {
-    return 'locations__item--map-left';
-  }
+function odd_left_even_right( $index ) {
+	if ( $index % 2 == 0 ) {
+		return 'locations__item--map-right';
+	} else {
+		return 'locations__item--map-left';
+	}
 }
 
 function custom_redirects() {
 
-  if ( is_single() && get_post_type() == 'location' ) {
-      wp_redirect( home_url( '/locations' ) );
-      die;
-  }
+	if ( is_single() && get_post_type() == 'location' ) {
+		wp_redirect( home_url( '/locations' ) );
+		die;
+	}
 }
 
 add_action( 'template_redirect', 'custom_redirects' );

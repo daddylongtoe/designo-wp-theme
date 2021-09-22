@@ -27,3 +27,17 @@
 	<?php wp_body_open(); ?>
 	<div class="content-wrapper">
   <?php get_template_part( 'template-parts/components/navbar' ); ?>
+	<header class="about-header__section container">
+	  <div class="about-header text-white">
+	  <div class="about-header__content container">
+	  <h1 class="about-header__title text-white"><?php echo $args['content']['title']; ?></h1>
+	  <?php echo $args['content']['text']; ?>
+	  </div>
+	  <div class="about-header__image">
+	  <img
+	  src="<?php echo $args['content']['image']['url']; ?>"
+	  alt="people working around a table using digital devices"
+	  />
+	  </div>
+	  </div>
+	</header>

@@ -29,4 +29,4 @@ get_header();
 	</main><!-- #main -->
 
 <?php
-get_footer('short');
+get_footer( 'short' );
