@@ -27,11 +27,3 @@
 	<?php wp_body_open(); ?>
 	<div class="content-wrapper">
   <?php get_template_part( 'template-parts/components/navbar' ); ?>
-  <header class="service-header__section bg-peach container entry-header">
-	<div class="service-header container text-white">
-  <div class="service-header__content">
-	  <h1 class="service-header__title text-white" style="padding-bottom: 0"><?php the_title(); ?></h1>
-	  <?php echo ( has_excerpt() ? '<p class="service-header__text">' . get_the_excerpt() . '</p>' : null ); ?>
-  </div>
-  </div>
-  </header>

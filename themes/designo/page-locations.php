@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header( 'no-banner' ); ?>
 
 <section class="locations__section container">
   <div class="locations">

@@ -5,20 +5,7 @@
 if ( have_posts() ) {
 	while ( have_posts() ) {
 		the_post();
-		?>
 
-	<header class="service-header__section bg-peach container">
-	  <div class="service-header container text-white">
-		<div class="service-header__content">
-		  <h1 class="service-header__title text-white"><?php the_title(); ?></h1>
-		  <p class="service-header__text">
-			<?php echo get_the_excerpt(); ?>
-		  </p>
-		</div>
-	  </div>
-	</header>
-
-		<?php
 		$related_projects = new WP_Query(
 			array(
 				'posts_per_page' => -1,

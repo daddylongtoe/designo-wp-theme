@@ -1052,18 +1052,20 @@ a:focus:hover {
   background-size: 18rem;
 }
 .service-header__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
   z-index: 1;
   text-align: center;
 }
 .service-header__title {
   margin-inline: auto;
   max-width: 18ch;
-  padding-bottom: 0.78125em;
 }
 .service-header__text {
   margin-inline: auto;
   max-width: 40ch;
-  padding-bottom: 1.5625em;
 }
 @media (min-width: 769px) {
   .service-header {

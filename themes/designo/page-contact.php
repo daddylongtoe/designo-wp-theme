@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header( 'no-banner' ); ?>
 
 <header class="contact-header__section">
   <div class="contact-header container text-white">
@@ -11,29 +11,7 @@
 		users, drop us a line.
 	  </p>
 	</div>
-	<form action="POST" class="contact-header__form form">
-	  <ul>
-		<li>
-		  <input type="text" id="name" name="user_name" placeholder=" " />
-		  <label for="name">Name</label>
-		</li>
-		<li>
-		  <input type="email" id="mail" name="user_email" placeholder=" " />
-		  <label for="mail">Email Address</label>
-		</li>
-		<li>
-		  <input type="text" id="phone" name="user_phone" placeholder=" " />
-		  <label for="phone">Phone</label>
-		</li>
-		<li>
-		  <textarea id="msg" name="user_message" placeholder=" "></textarea>
-		  <label for="msg">Your Message</label>
-		</li>
-		<li class="button">
-		  <button type="submit" class="btn-primary" disabled>Submit</button>
-		</li>
-	  </ul>
-	</form>
+	<?php get_template_part( 'template-parts/components/contact-form' ); ?>
   </div>
 </header>
 
