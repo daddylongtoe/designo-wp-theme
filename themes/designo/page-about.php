@@ -12,8 +12,8 @@ get_header(
 
 	$content = $rows[1];
 	get_template_part(
-		'template-parts/section',
-		'media-text',
+		'template-parts/sections/media-text',
+		null,
 		array(
 			'content'     => $content,
 			'orientation' => 'image-text--image-left',
@@ -24,8 +24,8 @@ get_header(
 
 	$content = $rows[2];
 	get_template_part(
-		'template-parts/section',
-		'media-text',
+		'template-parts/sections/media-text',
+		null,
 		array(
 			'content'     => $content,
 			'orientation' => 'image-text--image-right',
