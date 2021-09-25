@@ -2,7 +2,7 @@
   <div class="footer__logo-container">
 	<a href="/"
 	><img
-	  src="<?php echo get_theme_file_uri( '/assets/shared/desktop/logo-light.png' ); ?>"
+	  src="<?php echo get_theme_file_uri( 'assets/images/shared/desktop/logo-light.png' ); ?>"
 	  alt="Designo logo"
 	  class="footer__logo"
 	/></a>

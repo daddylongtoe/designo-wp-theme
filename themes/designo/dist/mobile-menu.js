@@ -1,0 +1,2 @@
+const menuIcon=document.querySelector(".navbar__menu-icon"),menuIconItems=document.querySelectorAll(".navbar__menu-icon-item"),menu=document.querySelector(".navbar__menu"),toggleOpenMenuClass=()=>{menu.classList.toggle("navbar__menu--open"),menuIconItems.forEach((e=>e.classList.toggle("navbar__menu-icon-item--active")))};menuIcon.addEventListener("click",toggleOpenMenuClass);
+//# sourceMappingURL=mobile-menu.js.map

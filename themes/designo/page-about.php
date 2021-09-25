@@ -20,7 +20,7 @@ get_header(
 		)
 	);
 
-	get_template_part( 'template-parts/section', 'location-icons' );
+	get_template_part( 'template-parts/sections/location-icons' );
 
 	$content = $rows[2];
 	get_template_part(
@@ -32,6 +32,6 @@ get_header(
 		)
 	);
 
-	get_template_part( 'template-parts/section', 'contact' );
+	get_template_part( 'template-parts/sections/contact-global' );
 
 	get_footer();

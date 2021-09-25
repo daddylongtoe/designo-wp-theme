@@ -26,7 +26,7 @@
     left: 0;
     z-index: -1;
     background-color: $peach;
-    background-image: url('../../../assets/contact/mobile/bg-pattern-hero-contact-mobile.svg');
+    background-image: url('assets/images/contact/mobile/bg-pattern-hero-contact-mobile.svg');
     background-repeat: no-repeat;
     background-position: 16% 0%;
     background-size: 53rem;
@@ -45,7 +45,7 @@
     border-radius: 15px;
 
     &::before {
-      background-image: url('../../../assets/contact/desktop/bg-pattern-hero-desktop.svg');
+      background-image: url('assets/images/contact/desktop/bg-pattern-hero-desktop.svg');
       background-repeat: no-repeat;
       background-position: -200% -70%;
       background-size: 40rem;
@@ -68,7 +68,7 @@
     padding-inline: 95px;
 
     &::before {
-      background-image: url('./assets/contact/desktop/bg-pattern-hero-desktop.svg');
+      background-image: url('assets/images/contact/desktop/bg-pattern-hero-desktop.svg');
       background-repeat: no-repeat;
       background-position: left bottom;
       background-size: 40rem;

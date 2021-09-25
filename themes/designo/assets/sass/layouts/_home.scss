@@ -36,7 +36,7 @@
     left: 0;
     z-index: -1;
     background-color: $peach;
-    background-image: url('./assets/shared/desktop/bg-pattern-small-circle.svg');
+    background-image: url('assets/images/shared/desktop/bg-pattern-small-circle.svg');
     background-repeat: no-repeat;
     background-position: 0 center;
     background-size: 40rem auto;
@@ -135,16 +135,6 @@
 .service-tile {
   @include service-tile();
 }
-
-// #web-design {
-//   @include service-tile();
-// }
-// #app-design {
-//   @include service-tile();
-// }
-// #graphic-design {
-//   @include service-tile();
-// }
 
 // Values
 .values {

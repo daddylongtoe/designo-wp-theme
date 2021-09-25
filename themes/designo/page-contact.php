@@ -15,6 +15,6 @@
   </div>
 </header>
 
-<?php get_template_part( 'template-parts/section', 'location-icons' );
+<?php get_template_part( 'template-parts/sections/location-icons' );
 
 get_footer( 'short' ); ?>

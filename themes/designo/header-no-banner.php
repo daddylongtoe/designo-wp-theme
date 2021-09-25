@@ -26,4 +26,4 @@
 	>
 	<?php wp_body_open(); ?>
 	<div class="content-wrapper">
-  <?php get_template_part( 'template-parts/components/navbar' ); ?>
+  <?php get_template_part( 'template-parts/header/site-nav' ); ?>

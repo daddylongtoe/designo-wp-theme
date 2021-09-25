@@ -14,8 +14,8 @@
 	  <footer class="footer short-footer">
 		<div class="container">
 		  <?php
-			get_template_part( 'template-parts/section', 'footer-nav' );
-			get_template_part( 'template-parts/section', 'footer-info' );
+			get_template_part( 'template-parts/footer/nav-footer' );
+			get_template_part( 'template-parts/footer/info-footer' );
 			?>
 		</div>
 	  </footer>

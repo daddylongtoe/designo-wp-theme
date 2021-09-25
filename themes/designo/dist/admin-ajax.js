@@ -1,0 +1,2 @@
+const contactForm=document.getElementById("contact-form"),button=document.querySelector("#submit-button");contactForm&&contactForm.addEventListener("submit",(t=>{t.preventDefault(),button.disabled=!0,fetch("/wp-admin/admin-ajax.php",{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"},body:new URLSearchParams(new FormData(contactForm))}).then((t=>t.json())).then((({data:t})=>console.log({data:t}))).then((()=>contactForm.replaceChildren("Thank you for your message")))}));
+//# sourceMappingURL=admin-ajax.js.map

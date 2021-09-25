@@ -26,7 +26,7 @@
 	>
 	<?php wp_body_open(); ?>
 	<div class="content-wrapper">
-  <?php get_template_part( 'template-parts/components/navbar' ); ?>
+  <?php get_template_part( 'template-parts/header/site-nav' ); ?>
   <header class="service-header__section bg-peach container entry-header">
 	<div class="service-header container text-white">
   <div class="service-header__content">

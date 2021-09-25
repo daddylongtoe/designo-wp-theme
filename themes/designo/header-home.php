@@ -26,7 +26,7 @@
 	>
 	<?php wp_body_open(); ?>
 	<div class="content-wrapper">
-	<?php get_template_part( 'template-parts/components/navbar' ); ?>
+	<?php get_template_part( 'template-parts/header/site-nav' ); ?>
 	<header class="header__section container">
 	  <div class="header row container text-white">
 		<div class="header__content">
@@ -49,7 +49,7 @@
 		</div>
 		<div class="header__image">
 		<img
-		src="<?php echo get_theme_file_uri( '/assets/home/desktop/image-hero-phone.png' ); ?>"
+		src="<?php echo get_theme_file_uri( 'assets/images/home/desktop/image-hero-phone.png' ); ?>"
 		alt="mobile phone"
 		/>
 		</div>

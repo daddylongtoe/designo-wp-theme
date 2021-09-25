@@ -1,4 +1,4 @@
-@use 'abstracts'as*;
+@use 'abstracts' as *;
 
 @mixin icon-cta {
   display: flex;
@@ -11,7 +11,7 @@
   &__img {
     width: 188px;
     position: relative;
-    background-image: url('./assets/shared/desktop/bg-pattern-small-circle.svg');
+    background-image: url('assets/images/shared/desktop/bg-pattern-small-circle.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;

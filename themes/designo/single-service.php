@@ -52,12 +52,12 @@ if ( have_posts() ) {
 
 		wp_reset_postdata();
 
-		get_template_part( 'template-parts/section', 'servicepage-services' );
+		get_template_part( 'template-parts/sections/servicepage-services' );
 
 	}
 }
 ?>
 
-<?php get_template_part( 'template-parts/section', 'contact' ); ?>
+<?php get_template_part( 'template-parts/sections/contact-global' ); ?>
 
 <?php get_footer(); ?>
