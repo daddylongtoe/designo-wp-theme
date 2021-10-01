@@ -3,6 +3,7 @@
 .form {
   max-width: 573px;
   width: 100%;
+
   & ul {
     list-style: none;
     padding: 0;
@@ -63,6 +64,7 @@
           }
         }
       }
+
       & button {
         margin-top: 2.5rem;
       }

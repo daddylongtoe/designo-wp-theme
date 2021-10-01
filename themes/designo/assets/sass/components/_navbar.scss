@@ -44,8 +44,10 @@
 
   &__menu-icon {
     display: block;
+
     &-item {
       display: none;
+
       &--active {
         display: block;
       }
@@ -99,9 +101,11 @@
 
     &__menu-icon {
       display: none;
+
       &--hamburger {
         display: none;
       }
+
       &--close {
         display: none;
       }

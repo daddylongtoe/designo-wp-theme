@@ -11,13 +11,13 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-  <?php designo_post_thumbnail(); ?>
+	<?php designo_post_thumbnail(); ?>
 
-	<div class="entry-content page-content">
+    <div class="entry-content page-content">
 		<?php
 		the_content();
 
 		?>
-	</div><!-- .entry-content -->
+    </div><!-- .entry-content -->
 
 </article><!-- #post-<?php the_ID(); ?> -->

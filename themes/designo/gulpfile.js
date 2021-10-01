@@ -32,7 +32,7 @@ function browsersyncServe(cb) {
 }
 
 function browsersyncReload(cb) {
-  browsersync.reload();
+  browserSync.reload();
   cb();
 }
 

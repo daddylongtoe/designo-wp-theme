@@ -8,7 +8,7 @@ if ( have_posts() ) {
 
 		$related_projects = new WP_Query(
 			array(
-				'posts_per_page' => -1,
+				'posts_per_page' => - 1,
 				'post_type'      => 'project',
 				'meta_query'     => array(
 					array(
@@ -23,30 +23,30 @@ if ( have_posts() ) {
 		if ( $related_projects->have_posts() ) {
 			?>
 
-	  <section class="projects__section">
-		<div class="projects container">
+            <section class="projects__section">
+                <div class="projects container">
 
-			<?php
-			while ( $related_projects->have_posts() ) {
-				$related_projects->the_post();
-				?>
+					<?php
+					while ( $related_projects->have_posts() ) {
+						$related_projects->the_post();
+						?>
 
-		  <div class="project-card">
-			<img
-			  src="<?php the_post_thumbnail_url(); ?>"
-			  alt="3 HGVs on the road"
-			  class="project-card__image"
-			/>
-			<div class="project-card__details">
-			  <h3 class="project-card__title"><?php the_title(); ?></h3>
-			  <p class="project-card__text">
-				<?php echo get_the_excerpt(); ?>
-			  </p>
-			</div>
-		  </div>
-		   <?php } ?>
-		</div>
-	  </section>
+                        <div class="project-card">
+                            <img
+                                    src="<?php the_post_thumbnail_url(); ?>"
+                                    alt="3 HGVs on the road"
+                                    class="project-card__image"
+                            />
+                            <div class="project-card__details">
+                                <h3 class="project-card__title"><?php the_title(); ?></h3>
+                                <p class="project-card__text">
+									<?php echo get_the_excerpt(); ?>
+                                </p>
+                            </div>
+                        </div>
+					<?php } ?>
+                </div>
+            </section>
 			<?php
 		}
 

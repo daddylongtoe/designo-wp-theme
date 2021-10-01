@@ -5,10 +5,10 @@ const menu = document.querySelector('.navbar__menu');
 
 // Functions
 const toggleOpenMenuClass = () => {
-  menu.classList.toggle('navbar__menu--open');
-  menuIconItems.forEach((item) =>
-    item.classList.toggle('navbar__menu-icon-item--active')
-  );
+    menu.classList.toggle('navbar__menu--open');
+    menuIconItems.forEach((item) =>
+        item.classList.toggle('navbar__menu-icon-item--active')
+    );
 };
 
 // Event Listenenrs

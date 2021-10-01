@@ -1,7 +1,7 @@
 <?php
 
-  $rows    = get_field( 'media_&_text' );
-  $content = $rows[0];
+$rows    = get_field( 'media_&_text' );
+$content = $rows[0];
 
 get_header(
 	'about',
@@ -10,28 +10,28 @@ get_header(
 	)
 );
 
-	$content = $rows[1];
-	get_template_part(
-		'template-parts/sections/media-text',
-		null,
-		array(
-			'content'     => $content,
-			'orientation' => 'image-text--image-left',
-		)
-	);
+$content = $rows[1];
+get_template_part(
+	'template-parts/sections/media-text',
+	null,
+	array(
+		'content'     => $content,
+		'orientation' => 'image-text--image-left',
+	)
+);
 
-	get_template_part( 'template-parts/sections/location-icons' );
+get_template_part( 'template-parts/sections/location-icons' );
 
-	$content = $rows[2];
-	get_template_part(
-		'template-parts/sections/media-text',
-		null,
-		array(
-			'content'     => $content,
-			'orientation' => 'image-text--image-right',
-		)
-	);
+$content = $rows[2];
+get_template_part(
+	'template-parts/sections/media-text',
+	null,
+	array(
+		'content'     => $content,
+		'orientation' => 'image-text--image-right',
+	)
+);
 
-	get_template_part( 'template-parts/sections/contact-global' );
+get_template_part( 'template-parts/sections/contact-global' );
 
-	get_footer();
+get_footer();

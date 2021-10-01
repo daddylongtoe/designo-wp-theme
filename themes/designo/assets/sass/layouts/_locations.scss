@@ -5,8 +5,10 @@
     &.container {
       padding-inline: 0;
     }
+
     padding-bottom: 3.75rem;
   }
+
   display: flex;
   flex-direction: column;
   gap: 2.5em;
@@ -20,6 +22,7 @@
       min-height: 20rem;
     }
   }
+
   &__details {
     min-height: 24.625rem;
     background-color: #fdf3f0;
@@ -52,6 +55,7 @@
     text-align: center;
     gap: inherit;
   }
+
   &__title {
     color: $peach;
   }
@@ -133,6 +137,7 @@
       &--map-left {
         flex-direction: row;
       }
+
       &--map-right {
         flex-direction: row-reverse;
       }

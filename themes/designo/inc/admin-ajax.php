@@ -2,7 +2,7 @@
 
 add_action(
 	'wp_enqueue_scripts',
-	function() {
+	function () {
 		wp_enqueue_script( 'admin-ajax', get_stylesheet_directory_uri() . '/assets/js/admin-ajax.js', '', '', true );
 	}
 );

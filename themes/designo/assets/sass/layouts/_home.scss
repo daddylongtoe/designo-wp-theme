@@ -57,6 +57,7 @@
     max-width: 18ch;
     padding-bottom: 0.78125em;
   }
+
   &__text {
     max-width: 45ch;
     padding-bottom: 1.5625em;
@@ -104,6 +105,7 @@
 
     &__image {
       flex: 1 1 35%;
+
       img {
         right: 0;
         transform: translate(-55%, -18%);

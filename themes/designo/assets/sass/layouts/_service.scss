@@ -109,6 +109,7 @@
   &__section {
     padding-block: 3.75rem;
   }
+
   display: flex;
   flex-direction: column;
   gap: 1.5em;
@@ -125,12 +126,14 @@
 
 #web-design {
   @include service-tile(
-    'assets/images/home/desktop/image-web-design-large.jpg'
+                  'assets/images/home/desktop/image-web-design-large.jpg'
   );
 }
+
 #app-design {
   @include service-tile('assets/images/home/desktop/image-app-design.jpg');
 }
+
 #graphic-design {
   @include service-tile('assets/images/home/desktop/image-graphic-design.jpg');
 }

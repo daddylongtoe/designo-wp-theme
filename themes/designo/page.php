@@ -15,7 +15,7 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main container">
+    <main id="primary" class="site-main container">
 
 		<?php
 		while ( have_posts() ) :
@@ -26,7 +26,7 @@ get_header();
 		endwhile; // End of the loop.
 		?>
 
-	</main><!-- #main -->
+    </main><!-- #main -->
 
 <?php
 get_footer( 'short' );

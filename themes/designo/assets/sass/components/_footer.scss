@@ -68,8 +68,7 @@
       padding-bottom: 4rem;
 
       & a:hover {
-        filter: brightness(0) saturate(100%) invert(86%) sepia(8%)
-          saturate(5078%) hue-rotate(302deg) brightness(112%) contrast(105%);
+        filter: brightness(0) saturate(100%) invert(86%) sepia(8%) saturate(5078%) hue-rotate(302deg) brightness(112%) contrast(105%);
       }
     }
   }

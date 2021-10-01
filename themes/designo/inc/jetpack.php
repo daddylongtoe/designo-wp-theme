@@ -32,7 +32,7 @@ function designo_jetpack_setup() {
 	add_theme_support(
 		'jetpack-content-options',
 		array(
-			'post-details' => array(
+			'post-details'    => array(
 				'stylesheet' => 'designo-style',
 				'date'       => '.posted-on',
 				'categories' => '.cat-links',
@@ -48,6 +48,7 @@ function designo_jetpack_setup() {
 		)
 	);
 }
+
 add_action( 'after_setup_theme', 'designo_jetpack_setup' );
 
 /**

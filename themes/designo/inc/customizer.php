@@ -32,6 +32,7 @@ function designo_customize_register( $wp_customize ) {
 		);
 	}
 }
+
 add_action( 'customize_register', 'designo_customize_register' );
 
 /**
@@ -58,4 +59,5 @@ function designo_customize_partial_blogdescription() {
 function designo_customize_preview_js() {
 	wp_enqueue_script( 'designo-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), _S_VERSION, true );
 }
+
 add_action( 'customize_preview_init', 'designo_customize_preview_js' );

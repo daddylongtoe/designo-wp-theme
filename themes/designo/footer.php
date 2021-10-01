@@ -11,16 +11,16 @@
 
 ?>
 
-	  <footer class="footer">
-		<div class="container">
-		  <?php
-			get_template_part( 'template-parts/footer/nav-footer' );
-			get_template_part( 'template-parts/footer/info-footer' );
-			?>
-		</div>
-	  </footer>
+<footer class="footer">
+    <div class="container">
+		<?php
+		get_template_part( 'template-parts/footer/nav-footer' );
+		get_template_part( 'template-parts/footer/info-footer' );
+		?>
+    </div>
+</footer>
 
-	  <?php wp_footer(); ?>
-	  </div>
-  </body>
+<?php wp_footer(); ?>
+</div>
+</body>
 </html>
